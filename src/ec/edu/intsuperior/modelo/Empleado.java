@@ -8,7 +8,6 @@ import java.util.Date;
  * @author Santiago Solis
  */
 public class Empleado extends Persona {
-
     private double sueldo;
 
     public Empleado() {
@@ -19,10 +18,7 @@ public class Empleado extends Persona {
         this.sueldo = sueldo;
     }
 
-    public String toString() {
-        return super.toString() + "\n"
-                + "Sueldo" + getSueldo() + "\n"; //To change body of generated methods, choose Tools | Templates.
-    }
+  
 
     public double getSueldo() {
         return sueldo;
@@ -30,7 +26,15 @@ public class Empleado extends Persona {
 
     public void setSueldo(double sueldo) {
         this.sueldo = sueldo;
-        
-   
+    }
     
     
+    @Override
+    public String toString() {
+        return super.toString()+"\n"
+                + "Sueldo" +getSueldo()+"\n"; //To change body of generated methods, choose Tools | Templates.
+    }
+    }
+    
+    
+
